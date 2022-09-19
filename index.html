@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kafene</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li class="logo">
+            <img
+              src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            />Kafene
+          </li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="users.html">Users</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="login-form">
+        <h1>Sign In</h1>
+        <form >
+          <div class="txt-feild">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter Username"
+            />
+          </div>
+          <div class="txt-feild">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+            />
+          </div>
+          <div class="btn">
+            <input
+              type="button"
+              value="Login"
+              id="submit"
+              onclick="loginForm()"
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script>
+    function loginForm() {
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+      if (username === password && username.length > 1) {
+        alert("Login Successful");
+        window.localStorage.setItem("loginStatus", "true");
+        // Redirecting to other page.
+        window.location.href = "orders.html";
+      } else {
+        alert(`Please enter valid credentials ${type} ${type}`);
+      }
+      let status = window.localStorage.getItem("loginStatus");
+      if (status == "true") {
+        window.location.href = "orders.html";
+      }
+    }
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,220 @@
+/* login page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f6f7fb;
+}
+.navbar {
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  height: 50px;
+  background-color: white;
+  box-shadow: 3px 3px 2px lightgrey;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar ul li {
+  padding: 0 15px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.logo img {
+  width: 24px;
+  margin: 0 10px;
+}
+.login-form h1 {
+  letter-spacing: 1px;
+  margin: 0 0 24px;
+  font-family: "Roboto", sans-serif;
+}
+.login-form {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 6px #ccc;
+}
+.login-form form {
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+form .txt-feild {
+  position: relative;
+  right: 25px;
+  bottom: 10px;
+}
+.txt-feild input {
+  width: 100%;
+  padding-top: 16px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid #8c8c8c;
+  margin-bottom: 16px;
+  outline: none;
+}
+.txt-feild label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: rgb(165, 165, 165);
+  pointer-events: none;
+}
+.btn input {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #20b883;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 24px;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 14px 36px;
+  position: relative;
+  right: 25px;
+}
+
+/* Order Page  and Product Page */
+#orders {
+  color: #20b883;
+  border-bottom: 3px solid #20b883;
+  padding-bottom: 10px;
+}
+
+.navbar ul span {
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  color: rgba(0,0,0,.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .8px;
+  margin: 0 25px;
+}
+.container h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  font-weight: bold;
+}
+.order-page {
+  display: flex;
+  align-items: baseline;
+}
+.order-page #filters {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+main {
+  margin: 50px;
+}
+.Homepageorders {
+  display: flex;
+}
+.Homepage_OrderTable {
+  width: 90%;
+  padding: 10px;
+}
+#filtxt {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 6px 0;
+}
+label {
+  margin: 10px 0;
+}
+.Homepage_OrderTable td {
+  text-align: center;
+}
+
+.Topbar_BrandName {
+  background-color: #fff;
+}
+.table {
+  width: 100%;
+}
+#product {
+  color: #20b883;
+  border-bottom: 3px solid #20b883;
+  padding-bottom: 10px;
+}
+.table th,
+table td {
+  text-align: left;
+  padding: 15px 20px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.table td {
+  background-color: #fff;
+  border-bottom: 4px solid #f6f7fb;
+}
+
+/* User Page  */
+#Users {
+  color: #20b883;
+  border-bottom: 3px solid #20b883;
+  padding-bottom: 10px;
+}
+.UserList {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.UserList_SearchBox {
+  padding: 12px 24px;
+  font-size: 15px;
+  border: 0;
+  border-bottom: 2px solid #8c8c8c;
+  margin: 0 36px 0 0;
+  outline: none;
+  background-color: #ffffff;
+  width: 40px;
+}
+.UserList_Button {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #20b883;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.UserList_SecondaryText {
+  color: #8c8c8c;
+}
